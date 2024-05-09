@@ -1,0 +1,81 @@
+@import 'variables';
+
+.confirm-registration {
+    .container-fluid {
+        text-align: center;
+    
+        h2 {
+            margin-bottom: $spacing-medium;
+            margin-top: $spacing-medium;
+            text-align: center;
+            font-size: $heading-1-size;
+            color: $primary-color;
+            font-weight: bold;
+        }
+    
+        img {
+            margin-top: -$spacing-medium;
+        }
+    
+        p {
+            font-family: $font-family;
+            font-size: $font-size-large;
+            font-weight: bold;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            background-color: $background-color;
+            border: 1px solid $accent-color;
+            border-radius: 10px;
+            box-shadow: $shadow;
+            padding-bottom: $spacing-large;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;;
+    
+            .field {
+                margin-bottom: $spacing-large;
+                margin-top: $spacing-medium;
+                margin-right: $spacing-large;
+                margin-left: $spacing-large;
+            }
+    
+            label {
+                display: block; 
+                margin-bottom: $spacing-tiny;
+            }
+    
+            input[type="text"] {
+                width: 200px;
+                flex: 1;
+                width: 100%;
+                border-radius: 5px;
+                font-size: $base-font-size;
+                border: 1px solid black;
+                background-color: white;
+                box-sizing: border-box;
+            }
+    
+            input[type="submit"] {
+                background-color: $primary-color;
+                border-radius: 5px;
+                border-color: black;
+                margin-left: $spacing-x-large;
+                margin-right: $spacing-x-large;
+                text-align: center;
+                font-weight: bold;
+                color: white;
+    
+                &:hover {
+                    background-color: white;
+                    margin-left: $spacing-x-large;
+                    margin-right: $spacing-x-large;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

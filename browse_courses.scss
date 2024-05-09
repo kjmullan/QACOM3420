@@ -1,0 +1,228 @@
+@import 'variables';
+
+.courses {
+    text-align: center;
+    width: $spacing-page-width;
+    max-width: 900px;
+    margin: auto;
+    padding: 70px auto;
+
+    @media screen and (max-width: $small-screen) {
+        width: $spacing-mobile-page-width;
+    }
+
+    h1 {
+        margin-bottom: $spacing-medium;
+        margin-top: $spacing-medium;
+        text-align: center;
+        font-size: $heading-1-size;
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    .container-browse-courses {
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: content-box;
+
+        .card {
+            padding: $spacing-medium;
+
+            span {
+                flex: 1;
+                margin-top: $spacing-medium;
+            }
+
+            .add-course-btn {
+                background-color: #16455D;
+                color: rgb(246, 246, 246);
+                border: 1px solid $primary-color;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                padding: 0.4rem 0.75rem;
+                border-radius: 5px;
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.9rem;
+                margin: auto;
+                width: 30%;
+                // color: white;
+                // border: 1px solid #3c677f;
+                // text-decoration: none;
+                // background-color: $primary-color;
+                // border-color: $text-color;
+                // border-radius: 5px;
+                // border-width: 2px;
+                // min-width: 135px;
+                // margin-bottom: $spacing-medium;
+                // padding-top: $spacing-small;
+                // padding-bottom: $spacing-small;
+
+                &:hover {
+                    background-color: #3c677f;
+                    border: 1px solid #3c677f;
+                    color: whitesmoke;
+                }
+            }
+
+            .browse-form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                .search-container {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: $spacing-medium; 
+
+                    .form-search-bar {
+                        width: 100%;
+                        margin-bottom: $spacing-small;  
+                        margin-top: $spacing-small;
+                        
+                        input[type=text] {
+                            margin-right: 0px;
+                        }
+                    }
+
+                    .form-dropdown-select {
+                        width: 35%; 
+                        margin-bottom: $spacing-small;  
+                        margin-top: $spacing-small;  
+                    }
+
+                    .btn {
+                        margin: auto;
+                        width: 20%;
+                        color: $text-color;
+                        background-color: white;
+                        border-color: $text-color;
+                        border-width: 2px;
+                        margin-top: $spacing-small;
+                        margin-bottom: $spacing-small;
+    
+                        &:hover {
+                            background-color: $primary-color;
+                            border-color: $primary-color;
+                            color: white;
+                        }
+                    }
+
+                    .btn.btn-outline-danger.me-2 {
+                        margin: auto;
+                        width: 20%;
+                        color: $text-color;
+                        background-color: white;
+                        border-color: $text-color;
+                        border-width: 2px;
+                        margin-top: $spacing-small;
+                        margin-bottom: $spacing-small;
+                        padding-top: $spacing-small;
+    
+                        &:hover {
+                            background-color: $primary-color;
+                            border-color: $primary-color;
+                            color: white;
+                        }
+
+                    }
+
+                }
+
+                @media screen and (max-width: $medium-screen) {
+                    display: flex;
+                    flex-direction: column;
+
+                    .search-container {
+                        flex-direction: column;
+                        width: 100%;
+
+                        .btn {
+                            width: 100%;
+                        }
+
+                        .form-control {
+                            width: 100%;
+                        }
+
+                        .form-select {
+                            width: 100%;
+                        }
+
+                        .btn.btn-outline-danger.me-2 {
+                            width: 100%;
+                        }
+                    }
+            
+                }
+            }
+
+            .btn-toolbar {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+
+                .btn {
+                    background-color: $secondary-color;
+                    border-radius: 5px;
+                    border-color: black;
+                    text-align: center;
+                    font-weight: bold;
+                    color: white;
+
+                    &:hover {
+                        background-color: $primary-color;
+                        margin-left: $spacing-small;
+                    }
+                }
+            }
+        }      
+    }
+
+    .course-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1;
+        gap: $spacing-large;
+
+        @media screen and (max-width: $small-screen) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-image {
+            grid-column: 1;
+
+            img {
+                max-width: 100%;
+                min-height: 100px;
+                aspect-ratio: 1 / 1;
+            }
+        }
+
+        .course-details {
+            grid-column: 2;
+            text-align: left;
+
+            h4 {
+                color: $primary-color;
+                padding-bottom: $spacing-small;
+            }
+
+            .course-description {
+                overflow-y: auto;
+                max-height: 100px;
+                padding-bottom: $spacing-medium;
+            }
+
+            .course-dates {
+                padding-bottom: $spacing-medium;
+            }
+    
+        }
+
+    }
+  
+}

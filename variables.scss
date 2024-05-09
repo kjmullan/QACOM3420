@@ -1,0 +1,44 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// Colors
+$primary-color: #16455D;
+$secondary-color: #EC9F29;
+$background-color: #FBFBFB;
+$text-color: #16455D;
+$accent-color: #F4D2A4;
+
+
+// Font Size and Family
+$font-family: Arial, sans-serif;
+$base-font-size: 16px; // Default base font size
+$font-size-small: 0.875rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.25rem;
+$font-size-extra-large: 1.5rem;
+
+// Heading Sizes (Relative to Base Font Size)
+$heading-1-size: 2.5rem;
+$heading-2-size: 2rem;
+$heading-3-size: 1.75rem;
+$heading-4-size: 1.5rem;
+$heading-5-size: 1.25rem;
+$heading-6-size: 1rem;
+
+// Padding and Margin
+$spacing-unit: 1rem; // Base spacing unit
+$spacing-tiny: 0.25rem;
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 1.5rem;
+$spacing-x-large: 2rem;
+$spacing-page-width: 70%;
+$spacing-mobile-page-width: 90%;
+
+// Shadows
+$shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+// Responsive Breakpoints
+$small-screen: 576px; // Mobile phoens
+$medium-screen: 768px; // Tablets
+$large-screen: 992px; // Desktops

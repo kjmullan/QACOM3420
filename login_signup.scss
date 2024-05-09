@@ -1,0 +1,142 @@
+@import 'variables';
+
+.login-signup-main {
+    font: $font-family;
+    color: $text-color;
+    width: $spacing-page-width;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+
+    @media screen and (max-width: $small-screen) {
+        width: $spacing-mobile-page-width;
+    }
+
+    .login-signup-h2 {
+        margin-bottom: $spacing-large;
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .simple_form {
+        align-items: center; 
+        .form-inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        
+            .form-group {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-color: black;
+                border-width: 5px;
+                margin-bottom: $spacing-large;
+                margin-left: 0;
+        
+                label {
+                    text-align: right;
+                    font-size: 18px;
+                    flex: 0 0 auto;
+                    margin-right: 20px;
+                    width: 100px;
+                }
+    
+                .form-check label {
+                    width: 120px;
+                    margin: 0;
+                }
+    
+                .form-check-input {
+                    border: 1px;
+                    border-color: black;
+                    background-color: rgb(229, 229, 229);
+
+                    &:checked {
+                        background-color: black;
+                    }
+                }
+        
+                input[type="password"],
+                input[type="email"] {
+                    flex: 1;
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    border: 1px solid black;
+                    background-color: white;
+                    box-sizing: border-box;
+                }
+
+                @media screen and (max-width: $small-screen) {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        text-align: center;
+                        margin-right: 0;
+                        margin-bottom: $spacing-tiny;
+                    }
+                }
+            }
+        }
+    
+        .form-inputs-sign-up {
+            width: 60%;
+            max-width: 300px;
+            padding-bottom: $spacing-small;
+        
+            .form-group {
+                align-items: center;
+                margin-bottom: 20px;
+                margin-left: 0;
+        
+                label {
+                    font-size: 18px;
+                    padding-bottom: 5px;
+                }
+
+                input[type="text"],
+                input[type="password"],
+                input[type="email"] {
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    border: 1px solid black;
+                    background-color: white;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        
+        .btn {
+            background-color: #16455D;
+            color: rgb(246, 246, 246);
+            border: 1px solid $primary-color;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 0.4rem 0.75rem;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+        
+            &:hover {
+              background-color: #3c677f;
+              border: 1px solid #3c677f;
+              color: whitesmoke;
+            }
+        }
+    
+        .login-signup-links {
+            color: black;
+            text-align: center;
+        }
+    
+    }
+}

@@ -1,0 +1,119 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+.navbar-nav{
+    .nav-link{
+        &.active:hover{
+            background-color: #d3d3d3;
+        }
+    }
+}
+.profile-pic-circle {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar.bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 0px !important;
+}
+
+.page-container{
+    min-height: 100vh;
+    position: relative;
+}
+
+.content-wrap{
+    padding-bottom: 3rem;
+}
+
+footer{
+    box-sizing: initial;
+}
+
+footer p{
+    font-size: initial;
+}
+
+// Pagination styles
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  
+    > li {
+      margin: 0 0rem;
+  
+      &.active {
+        a {
+          background-color: $primary-color;
+          color: $white;
+          border-radius: 50%;
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          font-weight: 600;
+          box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        }
+      }
+  
+      a {
+        color: $gray-700;
+        text-decoration: none;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s;
+        font-size: 1.2rem;
+        font-weight: 500;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  
+        &:hover {
+          background-color: $gray-200;
+        }
+      }
+    }
+  
+    .prev,
+    .next {
+      a {
+        color: $gray-700;
+        text-decoration: none;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s;
+        font-size: 1.2rem;
+        font-weight: 500;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  
+        &:hover {
+          background-color: $gray-200;
+        }
+      }
+    }
+  
+    .disabled {
+      a {
+        color: $gray-400;
+        pointer-events: none;
+      }
+    }
+  }

@@ -1,0 +1,137 @@
+@import "variables";
+$bottom-margin: 30px;
+
+body {
+    font: $font-family;
+}
+
+.user {
+    h1 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: $primary-color;
+    }
+}
+
+.container2 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-header {
+    background-color: white;
+    border: none;
+    align-items: center;
+}
+
+.simple_form .form-group {
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.simple_form .form-control {
+    width: 300px;
+}
+
+.simple_form .search_email label,
+.simple_form .search_name label {
+    position: absolute;
+    top: 40px;
+}
+
+.simple_form .form-select {
+    width: 120px;
+    margin-left: 15px;
+}
+
+th,
+td {
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+table.table{
+    width:90%;
+    margin: auto;
+}
+
+.button {
+    margin-left: 250px;
+}
+
+.button-extra {
+    margin-left: 170px;
+}
+
+.btn {
+    background-color: #16455D;
+    color: rgb(246, 246, 246);
+    border: 1px solid $primary-color;
+    padding: 0.4rem 0.75rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: #3c677f;
+      border: 1px solid #3c677f;
+      color: whitesmoke;
+    }
+}
+
+.new_equipment,
+.edit_equipment {
+    display: inline-block;
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 120px;
+    margin-top: 10px;
+}
+
+.new_equipment label,
+.edit_equipment label {
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.new_equipment .form-control,
+.edit_equipment .form-control {
+    margin-bottom: 20px;
+}
+
+.new_equipment .btn,
+.edit_equipment .btn {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: $medium-screen) {
+    .container2 {
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+
+    .button {
+        margin: auto;
+    }
+
+    .button-extra {
+        margin: auto;
+    }
+
+    .new_equipment,
+    .edit_equipment {
+        width: 90%;
+        padding: 3%;
+    }
+}

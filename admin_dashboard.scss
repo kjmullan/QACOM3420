@@ -1,0 +1,57 @@
+@import 'variables';
+
+.dashboard-view {
+    width: $spacing-page-width;
+    margin: auto;
+
+    .dashboard-heading {
+        margin-bottom: $spacing-medium;
+        font-size: $heading-1-size;
+        color: $primary-color;
+        text-align: center;    
+    }
+    .dashboard-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+    }
+    .dashboard-button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        box-shadow: $shadow;
+        padding: $spacing-large;
+        font-weight: bold;
+        text-decoration: none;
+        margin: $spacing-medium;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+        // Give mobile screens smaller spacing
+        @media screen and (max-width: $small-screen) {
+            margin: $spacing-tiny;
+        }
+    
+        a {
+            color: $background-color;
+            text-decoration: none;
+            font-size: $font-size-medium;
+            width: 8rem;
+            height: 8rem;
+            text-align: center;
+            align-content: center;
+        }
+    }
+    
+    .statistics-container {
+        margin: $spacing-small;
+        display: flex;
+        justify-content: space-between;
+    }
+}

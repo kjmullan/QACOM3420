@@ -1,0 +1,109 @@
+@import 'variables';
+
+.profile-view {
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: $font-family;
+    }
+
+  .profile-container {
+    width: 40%;
+    margin: auto;
+  }
+
+  .profile-heading {
+    margin-bottom: $spacing-medium;
+    font-size: $heading-1-size;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  .profile-text {
+    font-size: $font-size-medium;
+    color: rgb(69, 69, 69);
+  }  
+
+  .profile-box {
+    margin: auto;
+    padding: $spacing-medium;
+    background-color: $background-color;
+    border: 1px solid $accent-color;
+    border-radius: 10px;
+    box-shadow: $shadow;
+  }
+  .profile-picture {
+    text-align: center;
+
+    .profile-pic {
+      max-width: 50%;
+      max-height: 50%;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: $spacing-large;
+  }
+
+  .profile-button {
+    background-color: #16455D;
+    color: rgb(246, 246, 246);
+    border: 1px solid $primary-color;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.4rem 0.75rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    &:hover {
+      background-color: #3c677f;
+      border: 1px solid #3c677f;
+      color: whitesmoke;
+    }
+
+  }
+
+  // Not Used
+  .profile-delete-button {
+    background-color: red;
+    color: rgb(246, 246, 246);
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.4rem 0.75rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    &:hover {
+      background-color: whitesmoke;
+      border: 1px solid whitesmoke;
+      color: red;
+    }
+  }
+
+  .profile-delete {
+    color: red;
+    padding: 0.4rem 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.2s;
+  }
+
+  hr {
+    border-top: 1px solid black;
+    margin: $spacing-small;
+    opacity: 0.1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .profile-container {
+      width: $spacing-mobile-page-width;
+      margin: auto;
+    }
+  }
+}

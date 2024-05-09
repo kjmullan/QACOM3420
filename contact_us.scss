@@ -1,0 +1,111 @@
+@import 'variables';
+
+.contact-view {
+  .contact-container {
+    width: $spacing-page-width;
+    margin: auto;
+  }
+
+  .contact-heading-1 {
+    margin-bottom: $spacing-medium;
+    font-size: $heading-1-size;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  .contact-heading-2 {
+    color: $primary-color;
+    margin-bottom: $spacing-small;
+    font-size: $heading-4-size;
+  }
+
+  .contact-heading-4 {
+    margin-bottom: $spacing-medium;
+    font-size: $heading-4-size;
+    color: $text-color;
+  }
+
+  .contact-text {
+    font-size: $font-size-large;
+    text-align: right;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-medium;
+    margin: auto;
+    width: 80%;
+    padding: $spacing-medium;
+    background-color: $background-color;
+    border: 1px solid $accent-color;
+    border-radius: 10px;
+    box-shadow: $shadow;
+  }
+
+  .left-form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: $spacing-small $spacing-medium;
+  }
+
+  .right-form {
+    p {
+      margin-bottom: $spacing-small;
+    }
+  }
+
+  .contact-button-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: left;
+    margin-top: $spacing-small;
+
+    .contact-button {
+      background-color: $primary-color;
+      color: rgb(246, 246, 246);
+      border: 1px solid $primary-color;
+      padding: 0.4rem 0.75rem;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+
+      &:hover {
+        background-color: white;
+        border: 1px solid #3c677f;
+        color: black;
+      }
+    }
+  }
+
+  label {
+    margin-bottom: $spacing-tiny;
+    align-self: start;
+    padding-top: 5px;
+  }
+
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $accent-color;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  p {
+    font-size: $font-size-large;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-container {
+      width: $spacing-mobile-page-width;
+      margin: auto;
+    }
+  }
+}

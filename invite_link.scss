@@ -1,0 +1,98 @@
+$dark_colour: #c5c4c4;
+$font: 'Open Sans';
+$bottom-margin: 30px;
+@import 'variables';
+
+.invite-link-main {
+    font: $font-family;
+    color: $primary-color;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    width: $spacing-page-width;
+    max-width: 900px;
+    margin: auto;
+
+    a {
+        color: rgb(44, 43, 43);
+    }
+
+    h1 {
+        margin-bottom: $bottom-margin;
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .field {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-color: black;
+            border-width: 5px;
+            margin-bottom: $bottom-margin;
+    
+            label {
+                text-align: right;
+                font-size: 18px;
+                flex: 0 0 auto;
+                margin-right: 20px;
+                width: 120px;
+            }
+    
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="number"],
+            input[type="tel"],
+            input[type="url"],
+            input[type="search"],
+            textarea,
+            select {
+                flex: 1;
+                width: 100%;
+                padding: 8px;
+                border-radius: 5px;
+                font-size: 14px;
+                border: 1px solid black;
+                background-color: white;
+                box-sizing: border-box;
+            }
+        }
+
+        .btn {
+            background-color: #16455D;
+            color: rgb(246, 246, 246);
+            border: 1px solid $primary-color;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 0.4rem 0.75rem;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        
+            &:hover {
+              background-color: whitesmoke;
+              border: 1px solid $primary-color;
+              color: $primary-color;
+            }
+        }
+    }
+
+    .invite-link-display {
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0;
+        border: 2px solid #ddd;
+        text-align: center;
+    }
+}

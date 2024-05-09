@@ -1,0 +1,194 @@
+@import 'variables';
+
+.create-edit-course {
+  text-align: center;
+  font: $font-family;
+  color: $text-color;
+  width: $spacing-page-width;
+  max-width: 900px;
+  margin: auto;
+
+  h1 {
+    size: $heading-1-size;
+  }
+
+  h2 {
+    size: $heading-2-size;
+  }
+
+  h3 {
+    size: $heading-3-size;
+  }
+
+  @media screen and (max-width: $small-screen) {
+    width: $spacing-mobile-page-width;
+  }
+
+  .form-container {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: $spacing-large;
+    margin: auto;
+    width: 80%;
+    margin-bottom: $spacing-large;
+
+    @media screen and (max-width: $small-screen) {
+      width: 100%;
+    }
+
+    form {
+      .form-control {
+        margin-bottom: $spacing-medium;
+        float: left;
+        width: 75%;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+      }
+
+      label {
+        float: left;
+        width: 25%;
+        padding-right: $spacing-large;
+        font-size: $font-size-medium;
+      }
+
+      .btn {
+        margin: auto;
+        width: 30%;
+        color: $text-color;
+        background-color: white;
+        border-color: $text-color;
+        border-width: 2px;
+        margin-left: 65%;
+        min-width: 135px;
+      }
+
+      .btn:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: white;
+      }
+
+      // Labels and inputs are in the same column for smaller screens
+      @media screen and (max-width: $medium-screen) {
+        .form-group {
+          flex-direction: column;
+        }
+
+        .form-control {
+          width: 100%;
+        }
+
+        .form-group,
+        label,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+
+        .btn {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .text-form {
+    textarea {
+      min-height: 250px;
+      overflow-y: auto;
+      max-height: 250px;
+    }
+
+    .btn {
+      min-width: 150px;
+    }
+  }
+
+  .part-container {
+    margin-bottom: $spacing-large;
+
+    .part-list {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: $spacing-medium;
+
+        .part-item {
+          display: flex;
+          align-items: center;
+
+          .handle {
+            cursor: move;
+            margin-right: $spacing-medium;
+            color: $primary-color;
+          }
+
+          .part-content {
+            flex: 1;
+
+            .text-preview {
+              border-radius: 5px;
+              border: 1px solid #ccc;
+              padding: $spacing-large;
+
+              h3 {
+                .part-num {
+                  font-weight: bold;
+                  font-size: 1.2em;
+                  color: $primary-color;
+                  margin-right: 0.5em;
+                  float: left;
+                }
+              }
+
+              p {
+                font-size: $font-size-medium;
+                padding: 5px;
+                overflow-y: auto;
+                max-height: 250px;
+              }
+            }
+
+            // Actions concern the 'Edit' and 'Destroy' links
+            .actions {
+              text-align: right;
+              font-size: $font-size-medium;
+              padding-right: $spacing-medium;
+
+              a {
+                padding-right: $spacing-small;
+                color: $primary-color;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .part-types {
+    font-size: $font-size-medium;
+    padding: $spacing-large;
+    padding-left: $spacing-small;
+    padding-top: 0px;
+
+    a {
+      padding-right: $spacing-small;
+      color: $primary-color;
+      text-decoration: none;
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: $primary-color;
+    }
+  }
+}
